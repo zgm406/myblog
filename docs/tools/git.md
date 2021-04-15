@@ -10,16 +10,15 @@ git branch -d tmp   #删除临时分支
 ```
 
 # 简单的代码提交流程
-简单的代码提交流程
 
-git status 查看工作区代码相对于暂存区的差别
-git add . 将当前目录下修改的所有代码从工作区添加到暂存区 . 代表当前目录
-git commit -m ‘注释’ 将缓存区内容添加到本地仓库
-git pull origin master先将远程仓库master中的信息同步到本地仓库master中
-git push origin master 将本地版本库推送到远程服务器，
-origin是远程主机，master表示是远程服务器上的master分支和本地分支重名的简写，分支名是可以修改的
+```bash
+git status #查看工作区代码相对于暂存区的差别
+git add  #将当前目录下修改的所有代码从工作区添加到暂存区 . 代表当前目录
+git commit -m  #‘注释’ 将缓存区内容添加到本地仓库
+git pull origin master  #先将远程仓库master中的信息同步到本地仓库master中
+git push origin master  #将本地版本库推送到远程服务器，origin是远程主机，master表示是远程服务器上的master分支和本地分支重名的简写，分支名是可以修改的
+```
 Git add
-
 git add [参数] <路径>　作用就是将我们需要提交的代码从工作区添加到暂存区，就是告诉git系统，我们要提交哪些文件，之后就可以使用git commit命令进行提交了。
  为了方便下面都用 . 来标识路径， . 表示当前目录，路径可以修改，下列操作的作用范围都在版本库之内。
 
@@ -55,8 +54,3 @@ git push
 如果当前分支只有一个远程分支，那么主机名都可以省略，形如 git push，可以使用git branch -r ，查看远程的分支名
 关于 refs/for：
 refs/for 的意义在于我们提交代码到服务器之后是需要经过code review 之后才能进行merge的，而refs/heads 不需要
-
-作者：Mr无愧于心
-链接：https://www.jianshu.com/p/2e1d551b8261
-来源：简书
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
