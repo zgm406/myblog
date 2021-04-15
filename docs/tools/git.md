@@ -18,7 +18,7 @@ git commit -m  #‘注释’ 将缓存区内容添加到本地仓库
 git pull origin master  #先将远程仓库master中的信息同步到本地仓库master中
 git push origin master  #将本地版本库推送到远程服务器，origin是远程主机，master表示是远程服务器上的master分支和本地分支重名的简写，分支名是可以修改的
 ```
-Git add
+>Git add<br>
 git add [参数] <路径>　作用就是将我们需要提交的代码从工作区添加到暂存区，就是告诉git系统，我们要提交哪些文件，之后就可以使用git commit命令进行提交了。
  为了方便下面都用 . 来标识路径， . 表示当前目录，路径可以修改，下列操作的作用范围都在版本库之内。
 
